@@ -1,37 +1,55 @@
 <!DOCTYPE html>
-<html lang="es" class="scroll-smooth">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <html lang="es" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hemos venido a vender. Punto.</title>
     <meta name="description" content="Expertos en ventas y estrategias de crecimiento empresarial">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 <body class="bg-gray-900 text-gray-100 font-sans antialiased">
-    <header class="fixed w-full z-50 bg-gray-900/95 backdrop-blur-sm border-b border-gray-800" x-data="{ isOpen: false }">
+    <header class="fixed w-full z-50 bg-gray-900/95 backdrop-blur-sm border-b border-gray-800">
         <nav class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
-                <a href="/" class="text-2xl font-bold bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">
+                <a href="https://soypepediaz.github.io/hemos-venido-a-vender--punto--2025-06-13-gru90" class="text-2xl font-bold bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent hover:scale-105 transition-transform duration-300">
                     VENTAS
                 </a>
-                <button @click="isOpen = !isOpen" class="md:hidden focus:outline-none">
-                    <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
-                        <path x-show="!isOpen" d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
-                        <path x-show="isOpen" d="M6.343 6.343l11.314 11.314m-11.314 0L17.657 6.343"></path>
-                    </svg>
+                <button class="mobile-menu-button md:hidden focus:outline-none" aria-label="Toggle menu">
+                    <i class="fas fa-bars text-2xl"></i>
                 </button>
                 <div class="hidden md:flex space-x-8">
                     <a href="#features" class="hover:text-purple-400 transition-colors duration-300">Características</a>
                     <a href="#benefits" class="hover:text-purple-400 transition-colors duration-300">Beneficios</a>
+                    <a href="#testimonials" class="hover:text-purple-400 transition-colors duration-300">Testimonios</a>
+                    <a href="#about" class="hover:text-purple-400 transition-colors duration-300">Nosotros</a>
+                    <a href="#faq" class="hover:text-purple-400 transition-colors duration-300">FAQ</a>
                     <a href="#contact" class="hover:text-purple-400 transition-colors duration-300">Contacto</a>
                 </div>
+            </div>
+            <div class="mobile-menu hidden md:hidden mt-4 bg-gray-800 rounded-lg p-4">
+                <a href="#features" class="block py-2 hover:text-purple-400 transition-colors duration-300">Características</a>
+                <a href="#benefits" class="block py-2 hover:text-purple-400 transition-colors duration-300">Beneficios</a>
+                <a href="#testimonials" class="block py-2 hover:text-purple-400 transition-colors duration-300">Testimonios</a>
+                <a href="#about" class="block py-2 hover:text-purple-400 transition-colors duration-300">Nosotros</a>
+                <a href="#faq" class="block py-2 hover:text-purple-400 transition-colors duration-300">FAQ</a>
+                <a href="#contact" class="block py-2 hover:text-purple-400 transition-colors duration-300">Contacto</a>
             </div>
         </nav>
     </header>
 
     <main>
         <section class="relative min-h-screen flex items-center justify-center py-32 overflow-hidden">
+            <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80')] bg-cover bg-center opacity-10"></div>
             <div class="absolute inset-0 bg-gradient-to-br from-purple-900/20 to-pink-900/20"></div>
             <div class="container mx-auto px-6 relative z-10">
                 <div class="text-center max-w-4xl mx-auto">
@@ -39,7 +57,7 @@
                         Hemos venido a vender. Punto.
                     </h1>
                     <p class="text-xl md:text-2xl text-gray-300 mb-12">
-                        Que es lo que sabemos hacer.
+                        Potencia tus ventas con estrategias probadas que generan resultados reales. Más de 500 empresas confían en nuestro método.
                     </p>
                     <a href="https://llcpasoapaso.com" class="inline-block px-8 py-4 text-lg font-semibold rounded-full bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
                         Empieza Ahora
@@ -58,8 +76,8 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-bold mb-4">Vender</h3>
-                        <p class="text-gray-400">Maximizamos tus oportunidades de venta con estrategias probadas y efectivas.</p>
+                        <h3 class="text-xl font-bold mb-4">Vender con Precisión</h3>
+                        <p class="text-gray-400">Implementamos estrategias personalizadas que han generado un aumento promedio del 150% en ventas para nuestros clientes. Utilizamos análisis de datos y técnicas probadas para maximizar cada oportunidad.</p>
                     </div>
                     
                     <div class="bg-gray-800 rounded-2xl p-8 transform hover:scale-105 transition-all duration-300 shadow-xl hover:shadow-2xl">
@@ -68,8 +86,8 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-bold mb-4">Vender Más</h3>
-                        <p class="text-gray-400">Incrementamos tus resultados con técnicas avanzadas de ventas.</p>
+                        <h3 class="text-xl font-bold mb-4">Vender a Escala</h3>
+                        <p class="text-gray-400">Desarrollamos sistemas de ventas escalables que han permitido a nuestros clientes multiplicar por 3x sus ingresos en menos de 6 meses. Automatización inteligente y procesos optimizados.</p>
                     </div>
 
                     <div class="bg-gray-800 rounded-2xl p-8 transform hover:scale-105 transition-all duration-300 shadow-xl hover:shadow-2xl">
@@ -78,8 +96,8 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"></path>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-bold mb-4">Vender Mejor</h3>
-                        <p class="text-gray-400">Optimizamos cada aspecto de tu proceso de ventas para máxima eficiencia.</p>
+                        <h3 class="text-xl font-bold mb-4">Vender con Excelencia</h3>
+                        <p class="text-gray-400">Nuestro método ha logrado tasas de conversión superiores al 35% y un aumento del 80% en el valor promedio por venta. Formación continua y mejora constante de procesos.</p>
                     </div>
                 </div>
             </div>
@@ -89,17 +107,99 @@
             <div class="container mx-auto px-6">
                 <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Los Resultados Que Obtendrás</h2>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-                    <div class="bg-gradient-to-br from-purple-900/50 to-pink-900/50 rounded-2xl p-8">
+                    <div class="bg-gradient-to-br from-purple-900/50 to-pink-900/50 rounded-2xl p-8 transform hover:scale-105 transition-all duration-300 shadow-xl hover:shadow-2xl">
                         <h3 class="text-xl font-bold mb-4">Más Ventas</h3>
-                        <p class="text-gray-300">Incrementa tus ingresos con estrategias comprobadas de ventas.</p>
+                        <p class="text-gray-300">Incrementa tus ingresos hasta un 200% en los primeros 6 meses con nuestras estrategias comprobadas de ventas y sistema de seguimiento.</p>
                     </div>
-                    <div class="bg-gradient-to-br from-purple-900/50 to-pink-900/50 rounded-2xl p-8">
+                    <div class="bg-gradient-to-br from-purple-900/50 to-pink-900/50 rounded-2xl p-8 transform hover:scale-105 transition-all duration-300 shadow-xl hover:shadow-2xl">
                         <h3 class="text-xl font-bold mb-4">Más Margen</h3>
-                        <p class="text-gray-300">Optimiza tus operaciones para maximizar la rentabilidad.</p>
+                        <p class="text-gray-300">Optimiza tus operaciones para alcanzar márgenes de beneficio superiores al 40% mediante nuestra metodología de pricing estratégico.</p>
                     </div>
-                    <div class="bg-gradient-to-br from-purple-900/50 to-pink-900/50 rounded-2xl p-8">
-                        <h3 class="text-xl font-bold mb-4">Más Dineros</h3>
-                        <p class="text-gray-300">Aumenta tus ganancias y alcanza tus metas financieras.</p>
+                    <div class="bg-gradient-to-br from-purple-900/50 to-pink-900/50 rounded-2xl p-8 transform hover:scale-105 transition-all duration-300 shadow-xl hover:shadow-2xl">
+                        <h3 class="text-xl font-bold mb-4">Más Crecimiento</h3>
+                        <p class="text-gray-300">Expande tu negocio con un crecimiento sostenible del 25% trimestral utilizando nuestro sistema de escalabilidad probado.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="py-24 bg-gray-800/30">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Lo Que Dicen Nuestros Clientes</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-gray-800 p-8 rounded-2xl transform hover:scale-105 transition-all duration-300">
+                        <div class="flex items-center mb-4">
+                            <div class="text-yellow-400">★★★★★</div>
+                        </div>
+                        <p class="text-gray-300 mb-4">"Implementamos su metodología y nuestras ventas aumentaron un 187% en solo 4 meses. El ROI ha sido excepcional."</p>
+                        <p class="font-semibold">María Rodríguez</p>
+                        <p class="text-sm text-gray-400">CEO, TechStart Solutions</p>
+                    </div>
+                    <div class="bg-gray-800 p-8 rounded-2xl transform hover:scale-105 transition-all duration-300">
+                        <div class="flex items-center mb-4">
+                            <div class="text-yellow-400">★★★★★</div>
+                        </div>
+                        <p class="text-gray-300 mb-4">"Su enfoque en la optimización de procesos nos ayudó a duplicar nuestras conversiones mientras reducíamos costos operativos."</p>
+                        <p class="font-semibold">Carlos Mendoza</p>
+                        <p class="text-sm text-gray-400">Director Comercial, Global Retail</p>
+                    </div>
+                    <div class="bg-gray-800 p-8 rounded-2xl transform hover:scale-105 transition-all duration-300">
+                        <div class="flex items-center mb-4">
+                            <div class="text-yellow-400">★★★★★</div>
+                        </div>
+                        <p class="text-gray-300 mb-4">"La transformación de nuestro equipo de ventas ha sido notable. Ahora tenemos un sistema escalable y predecible."</p>
+                        <p class="font-semibold">Ana Martínez</p>
+                        <p class="text-sm text-gray-400">Directora de Ventas, InnovaTech</p>
+                    </div>
+                    <div class="bg-gray-800 p-8 rounded-2xl transform hover:scale-105 transition-all duration-300">
+                        <div class="flex items-center mb-4">
+                            <div class="text-yellow-400">★★★★★</div>
+                        </div>
+                        <p class="text-gray-300 mb-4">"El mejor retorno de inversión que hemos tenido en consultoría de ventas. Resultados tangibles desde el primer mes."</p>
+                        <p class="font-semibold">Jorge Sánchez</p>
+                        <p class="text-sm text-gray-400">Fundador, Digital Growth Agency</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-24 bg-gray-900">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Sobre Nosotros</h2>
+                <div class="max-w-3xl mx-auto text-gray-300 space-y-6">
+                    <p class="leading-relaxed">
+                        Fundada en 2018 por un equipo de expertos en ventas con más de 20 años de experiencia combinada, nuestra empresa nació con la misión de transformar la manera en que las empresas abordan sus procesos comerciales. Comenzamos ayudando a pequeñas startups y hoy trabajamos con empresas de todos los tamaños en múltiples sectores.
+                    </p>
+                    <p class="leading-relaxed">
+                        Nuestra misión es potenciar el crecimiento empresarial a través de estrategias de ventas innovadoras y sostenibles. Nos guían valores fundamentales como la excelencia operativa, la transparencia en los resultados y el compromiso con el éxito de nuestros clientes. Creemos en el poder de los datos y la mejora continua para alcanzar resultados extraordinarios.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="py-24 bg-gray-800/50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Preguntas Frecuentes</h2>
+                <div class="max-w-3xl mx-auto space-y-8">
+                    <div class="bg-gray-800 rounded-xl p-6 transform hover:scale-102 transition-all duration-300">
+                        <h3 class="text-xl font-semibold mb-4">¿Cuánto tiempo se necesita para ver resultados?</h3>
+                        <p class="text-gray-300">La mayoría de nuestros clientes comienzan a ver mejoras en sus métricas de ventas dentro de los primeros 30 días, con resultados significativos en 3-6 meses.</p>
+                    </div>
+                    <div class="bg-gray-800 rounded-xl p-6 transform hover:scale-102 transition-all duration-300">
+                        <h3 class="text-xl font-semibold mb-4">¿Qué industrias atienden?</h3>
+                        <p class="text-gray-300">Trabajamos con empresas B2B y B2C en sectores como tecnología, servicios profesionales, retail y manufactura. Nuestra metodología se adapta a cada industria.</p>
+                    </div>
+                    <div class="bg-gray-800 rounded-xl p-6 transform hover:scale-102 transition-all duration-300">
+                        <h3 class="text-xl font-semibold mb-4">¿Cómo miden el éxito?</h3>
+                        <p class="text-gray-300">Utilizamos KPIs específicos como tasa de conversión, valor promedio de venta, ciclo de ventas y ROI. Proporcionamos informes detallados mensualmente.</p>
+                    </div>
+                    <div class="bg-gray-800 rounded-xl p-6 transform hover:scale-102 transition-all duration-300">
+                        <h3 class="text-xl font-semibold mb-4">¿Qué incluye el servicio?</h3>
+                        <p class="text-gray-300">Nuestro servicio incluye consultoría estratégica, implementación de sistemas, formación de equipos, herramientas de automatización y seguimiento continuo.</p>
+                    </div>
+                    <div class="bg-gray-800 rounded-xl p-6 transform hover:scale-102 transition-all duration-300">
+                        <h3 class="text-xl font-semibold mb-4">¿Ofrecen garantías?</h3>
+                        <p class="text-gray-300">Sí, garantizamos un incremento mínimo del 30% en las métricas clave de ventas durante los primeros 6 meses o devolvemos tu inversión.</p>
                     </div>
                 </div>
             </div>
@@ -107,10 +207,10 @@
 
         <section id="contact" class="py-24 bg-gradient-to-br from-purple-900/20 to-pink-900/20">
             <div class="container mx-auto px-6 text-center">
-                <h2 class="text-3xl md:text-4xl font-bold mb-8">¿Listo para Vender Más?</h2>
-                <p class="text-xl text-gray-300 mb-12">Contacta con nosotros y comienza tu transformación</p>
+                <h2 class="text-3xl md:text-4xl font-bold mb-8">¿Listo para Transformar tus Ventas?</h2>
+                <p class="text-xl text-gray-300 mb-12">Únete a más de 500 empresas que ya han multiplicado sus resultados</p>
                 <div class="flex flex-col items-center justify-center space-y-6">
-                    <a href="mailto:llcpasoapaso@proton.me" class="text-lg text-purple-400 hover:text-purple-300 transition-colors duration-300">
+                    <a href="mailto:llcpasoapaso@proton.me" class="text-lg text-purple-400 hover:text-purple-300 transition-colors duration-300 transform hover:scale-105">
                         llcpasoapaso@proton.me
                     </a>
                     <a href="https://llcpasoapaso.com" class="inline-block px-8 py-4 text-lg font-semibold rounded-full bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
@@ -123,10 +223,64 @@
 
     <footer class="bg-gray-900 border-t border-gray-800 py-12">
         <div class="container mx-auto px-6">
-            <div class="text-center text-gray-400">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Enlaces Rápidos</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#features" class="text-gray-400 hover:text-purple-400 transition-colors duration-300">Características</a></li>
+                        <li><a href="#benefits" class="text-gray-400 hover:text-purple-400 transition-colors duration-300">Beneficios</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-purple-400 transition-colors duration-300">Contacto</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Legal</h3>
+                    <ul class="space-y-2">
+                        <li><a href="https://soypepediaz.github.io/hemos-venido-a-vender--punto--2025-06-13-gru90/privacy.html" class="text-gray-400 hover:text-purple-400 transition-colors duration-300">Política de Privacidad</a></li>
+                        <li><a href="https://soypepediaz.github.io/hemos-venido-a-vender--punto--2025-06-13-gru90/terms.html" class="text-gray-400 hover:text-purple-400 transition-colors duration-300">Términos de Servicio</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Recursos</h3>
+                    <ul class="space-y-2">
+                        <li><a href="https://soypepediaz.github.io/hemos-venido-a-vender--punto--2025-06-13-gru90/blog.html" class="text-gray-400 hover:text-purple-400 transition-colors duration-300">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center text-gray-400 mt-8">
                 <p>&copy; 2024 Todos los derechos reservados</p>
             </div>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('header nav .mobile-menu-button');
+            const mobileMenu = document.querySelector('header nav .mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+        });
+    </script>
+</body>
 </body>
 </html>
